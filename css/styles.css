@@ -120,7 +120,7 @@
 	--color-2-lightest             : hsla(127, 8%, 55%, 1);
 	--color-2-lighter              : hsla(127, 8%, 42%, 1);
 	--color-2-light                : #3a5568(127, 8%, 32%, 1);
-	--color-2-dark                 : #3a5568(127, 8%, 14%, 1);
+	--color-2-dark                 : #364f61(127, 8%, 14%, 1);
 	--color-2-darker               : #304656;
 	
 	--color-3-light                : #b1c4d3(39, 93%, 100%, 1);
@@ -3948,7 +3948,7 @@ td:last-child {
 .s-about {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-6);
-	background-color: var(--color-2-dark);
+	background: linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
 	color           : var(--color-3);
 }
 
