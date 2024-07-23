@@ -4251,7 +4251,7 @@ td:last-child {
 	font-weight     : 300;
 	color           : rgba(255, 255, 255, 0.6);
 	background-color: #181818;
-	padding-top     : var(--vspace-3);
+	padding-top     : var(--vspace-1);
 	padding-bottom  : var(--vspace-3);
 }
 
