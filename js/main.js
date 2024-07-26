@@ -352,6 +352,23 @@
     });
   }; // end ssMoveTo
 
+  /* mailbox
+   * ------------------------------------------------------ */
+  /* mailbox
+   * ------------------------------------------------------ */
+  const ssMailbox = function () {
+    const mailbox = document.getElementById("clickable-mailbox");
+
+    if (mailbox) {
+      mailbox.addEventListener("click", function () {
+        const email = "skander.karoui@gmail.com";
+        window.location.href = `mailto:${email}`;
+      });
+
+      mailbox.classList.add("clickable");
+    }
+  };
+
   /* Initialize
    * ------------------------------------------------------ */
   (function ssInit() {
@@ -361,5 +378,6 @@
     ssMailChimpForm();
     ssAlertBoxes();
     ssMoveTo();
+    ssMailbox();
   })();
 })(document.documentElement);

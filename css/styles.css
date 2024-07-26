@@ -3504,6 +3504,93 @@ td:last-child {
 	}
 }
 
+/* ===================================================================
+
+*/
+.clickable {
+	cursor:pointer;
+}
+.mailbox-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.mailbox {
+    position: relative;
+    width: 200px;
+    height: 150px;
+}
+
+.mailbox-post {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 100px;
+    background-color: #8B4513;
+}
+
+.mailbox-box {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 100px;
+    background-color: #CD853F;
+    border-radius: 10px 10px 0 0;
+}
+
+.mailbox-door {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 140px;
+    height: 70px;
+    background-color: #DEB887;
+    border-radius: 0 0 10px 10px;
+    transition: transform 0.3s ease;
+}
+
+.mailbox-door:hover {
+    transform: rotateX(30deg);
+}
+
+.mailbox-flag {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    width: 40px;
+    height: 30px;
+    background-color: #FF0000;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+}
+
+.mailbox-letter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid #333;
+}
+
+.mailbox-letter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 25px solid #333;
+}
 
 
 /* ===================================================================
@@ -3512,7 +3599,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-pageheader {
-	padding-top     : var(--vspace-6);
+	padding-top     : var(--vspace-1);
 	padding-bottom  : var(--vspace-3);
 	background-color: var(--color-2-dark);
 	text-align      : center;
@@ -3563,7 +3650,7 @@ td:last-child {
 
 @media screen and (max-width: 800px) {
 	.s-pageheader {
-		padding-top   : var(--vspace-5);
+		padding-top   : var(--vspace-1);
 		padding-bottom: var(--vspace-2);
 	}
 
@@ -4049,6 +4136,33 @@ td:last-child {
 }
 
 
+/* ===================================================================
+ * # EMAIL
+ *
+ *
+ * ------------------------------------------------------------------- */
+ .s-email-contact {
+	padding-top   : var(--vspace-0_125);
+	padding-bottom: var(--vspace-5);
+	background-color       : var(--color-2-dark);
+	background: linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
+	color           : var(--color-3);
+}
+
+.s-email-contact__content-main {
+	margin-top: var(--vspace-1_5);
+}
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * expertise
+ * ------------------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+	.s-email-contact {
+		padding-top: var(--vspace-5);
+	}
+}
+
 
 /* ===================================================================
  * # CLIENTS
@@ -4056,8 +4170,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-	padding-top     : var(--vspace-6);
-	padding-bottom  : var(--vspace-4);
+	padding-top     : var(--vspace-0_125);
+	padding-bottom  : var(--vspace-0);
 	background-color: var(--color-3);
 }
 
