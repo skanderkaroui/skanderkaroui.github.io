@@ -2774,7 +2774,7 @@ td:last-child {
 	font-size     : var(--text-display-2);
 	line-height   : 1.0606;
 	letter-spacing: -0.012em;
-	color         : var(--color-text-dark);
+	color         : var(--color-grey-4);
 	margin-top    : 0;
 	margin-bottom : var(--vspace-1_5);
 }
@@ -2795,6 +2795,7 @@ td:last-child {
 .show-ctr .list-items__item-header .list-items__item-title,
 .show-ctr .list-items__item-header .list-items__item-small-title {
 	margin: 0;
+	color: var(--color-grey-5);
 }
 
 .show-ctr .list-items__item-header::before {
@@ -4019,6 +4020,9 @@ td:last-child {
 .s-expertise {
 	padding-top   : var(--vspace-6);
 	padding-bottom: var(--vspace-5);
+	background-color       : var(--color-2-dark);
+	background: linear-gradient(20deg, hsl(130deg, 8%, 14%) 40%, hsl(0deg, 0%, 13%) 100%);
+	color           : var(--color-3);
 }
 
 .s-expertise__content-main {
