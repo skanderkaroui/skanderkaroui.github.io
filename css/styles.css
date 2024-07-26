@@ -2261,7 +2261,7 @@ button.btn--stroke {
 }
 
 .btn--stroke-white,
-button.btn--stroke {
+button.btn--stroke-white {
 	background: transparent !important;
 	border    : 2px solid var(--color-btn-stroke-white-text);
 	color     : var(--color-btn-stroke-white-text);
