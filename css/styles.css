@@ -172,6 +172,7 @@
    */
 	--color-text                   : var(--color-gray-18);
 	--color-text-dark              : #181818;
+	--color-text-white              : #f8f8f8;
 	--color-text-light             : var(--color-gray-14);
 	--color-placeholder            : var(--color-gray-12);
 
@@ -193,6 +194,7 @@
 	--color-btn-primary-hover-text : var(--color-2-dark);
 	--color-btn-stroke             : var(--color-text-dark);
 	--color-btn-stroke-text        : var(--color-text-dark);
+	--color-btn-stroke-white-text  : var(--color-text-white);
 	--color-btn-stroke-hover       : var(--color-text-dark);
 	--color-btn-stroke-hover-text  : var(--color-white);
 
@@ -2256,6 +2258,13 @@ button.btn--stroke {
 	background: transparent !important;
 	border    : 2px solid var(--color-btn-stroke);
 	color     : var(--color-btn-stroke-text);
+}
+
+.btn--stroke-white,
+button.btn--stroke {
+	background: transparent !important;
+	border    : 2px solid var(--color-btn-stroke-white-text);
+	color     : var(--color-btn-stroke-white-text);
 }
 
 .btn--stroke:focus,
